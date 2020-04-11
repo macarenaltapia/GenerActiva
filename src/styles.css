@@ -1,1 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
+@media print {
+    .container {
+      width: auto;
+    }
+  }
+
+  @media (max-width: 575.98px){
+
+    .global-margin{
+        padding-bottom: 80px !important;
+        text-align: center;
+    }
+    
+    .global-margin-top{
+        padding-top:  80px !important;
+    }
+
+    .pb-mobile{
+        padding-bottom: 2rem;
+    }
+
+    .form-group{
+        text-align: start;
+    }
+
+    .bg-azul{
+        text-align: center;
+    }
+    }
+    
+
+.navbar{
+    padding: .5rem 2rem !important;
+}
+
+body{
+    font-family: 'Open Sans' ;
+    font-weight: 18px;
+    color: #646464;
+}
+
+.global-margin{
+    padding-bottom: 170px;
+}
+
+.global-margin-top{
+    padding-top:  170px ;
+}
+
+.py-7{
+    padding: 87px 0px;
+}
+
+.bg-rosa{
+    background-color: #F0EBF9;
+}
+.bg-rosa-claro{
+    background-color: #FCF9FE;
+
+}
+.bg-rosaOscuro{
+    background-color: #DED7EB;}
+
+
+.card-title{
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #3E0C8E;
+    font-size: 30px;
+}
+
+.card-text{
+    font-weight: 400;
+    margin-top: 30px;
+    
+}
+
+.btn-violeta{
+    background-color: #3E0C8E;
+    color: #fff;
+    border-radius: 3em;
+    padding: 5px 30px;
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+
+
+.btn-violeta:hover{
+    background-color: #A88BD8;
+}
+
+.top-title{
+    font-family: 'Raleway';
+    font-size: 16px;
+    color: #3E0C8E;
+}
+
+.btn-violeta2{
+    border-radius: 2em;
+    background-color: #3E0C8E;
+    padding: 5px 30px;
+    color: #fff;
+}
+
+.lista{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.lista li {
+    margin-bottom: 15px;
+    list-style-type: disc;
+}
+
+.boton-2{
+    color: #3E0C8E;
+    font-weight: 700;
+    margin-top: 30px !important;
+}
+
+.boton-2:hover{
+   color: #A88BD8; 
+}
+
+.pt-6{
+    padding-top: 100px;
+}
+
+.list-unstyled li img{
+    padding-right: 5px;
+}
+
+

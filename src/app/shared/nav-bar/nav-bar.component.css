@@ -1,0 +1,47 @@
+.nav-link{
+    color:#3E0C8E !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-link:hover{
+    color: #A88BD8!important;
+}
+
+.btn-violeta{
+    background-color: #3E0C8E;
+    color: #fff;
+    border-radius: 3em;
+    padding: 5px 30px;
+}
+
+.btn-violeta:hover{
+    background-color: #A88BD8;
+}
+
+@media (max-width: 575.98px){
+
+.logo{
+    display: none !important;
+}
+}
+
+
+@media (min-width: 992px){
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+        };
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right:  2rem !important;
+            padding-left: 2rem !important;
+        }
+
+        .logo{
+            display: inline;
+        }
+}
+
+
+

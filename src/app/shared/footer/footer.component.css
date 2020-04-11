@@ -1,0 +1,36 @@
+
+.bg-azul{
+    background-color: #28065E;
+    padding: 0px 2rem;
+}
+
+.nav-link{
+color: #fff !important;
+font-family: 'raleway';
+font-size: 16px;
+font-weight: 400;
+}
+
+.nav-link:hover{
+    color: #E3DCEF !important;
+    }
+
+
+.type-logo{
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer-sub{
+    color: #E3DCEF;
+    font-size: 12px;
+}
+
+@media (max-width: 575.98px){
+.nav{
+    justify-content: center;
+}
+}

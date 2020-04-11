@@ -1,0 +1,133 @@
+<div class="container">
+    <div class="row global-margin global-margin-top">
+      <div class="col-12 col-md-5 pb-mobile">
+        <div class="card-body">
+            <h3 class="card-title">¿Buscás asesoramiento para adoptar políticas de equidad de género en tu organización?</h3>
+            <p class="card-text">En Generactiva podemos brindarte asesoría para tratar temas relacionados a lo laboral y al género. </p>
+            <button class="btn btn-sm btn-violeta" type="button"> Quiero saber más </button>
+        </div>    
+    </div>
+    <div class="col-12 col-md-7">
+      <img class="img-fluid" src="../../../assets/home/01.jpg"  width="100%"  heigh ="auto" alt="Generactiva">
+    </div>
+  </div>
+</div>  
+
+<div class="bg-rosa">
+  <div class="container">
+    <div class="row  global-margin global-margin-top">
+      <div class="col-12 col-md-6 pb-mobile">
+        <img class="img-fluid" src="../../../assets/home/02.png"  width="100%"  heigh ="auto" alt="Generactiva">
+      </div>
+      <div class="col-12 col-md-6">
+          <div class="card-body">
+              <p class="top-title">  <small>¿QUE HACEMOS?</small></p>
+              <h3 class="card-title">Acompañamos a las organizaciones que quieren adoptar políticas de igualdad de trato y oportunidades desde una perspectiva de género. </h3>
+              <p class="card-text">La creciente visibilización de las desigualdades de género mueve 
+                a diversos actores sociales hacia la búsqueda de mayor equidad. 
+               <br><br> Elaboramos estrategias para promover espacios laborales libres 
+                de violencia y discriminación.
+                </p>
+                <button class="btn btn-sm btn-violeta" type="button"> Quiero saber más </button>
+            </div>
+        </div>
+  </div>
+  </div>
+</div>
+<div class="bg-rosaOscuro py-7">
+  <div class="card-body text-center">
+    <h3 class="card-title">¡Trabajemos en equipo!</h3>
+    <p>Dejanos tu mail y en breve nos pondremos en contacto con vos.</p>
+      <form>
+        <div class="form-row  justify-content-center">
+          <div class="col-sm-3 text-left">
+            <input type="email" class="form-control" placeholder="Ingresa tu Email aqui">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-violeta2">Enviar</button>
+          </div>
+        </div>
+      </form>
+  </div>
+</div>
+<div class="container">
+  <div class="row global-margin global-margin-top">
+    <div class="col-12 col-md-6 pb-mobile">
+      <div class="card-body">
+        <p class="top-title"><small>¿COMO LO HACEMOS?</small></p>
+          <h3 class="card-title">Trabajamos de manera personalizada según las necesidades de cada institución</h3>
+          <p class="card-text">Podemos ofrecerte distintos servicios que se 
+            ajustan a las posibilidades y recursos disponibles 
+            de tu organización.
+            </p>
+          <button class="btn btn-sm btn-violeta" type="button"> Quiero saber más </button>
+        </div>    
+  </div>
+  <div class="col-12 col-md-6 mt-5">
+    <ul class="list-unstyled"> 
+      <li> <img class="img-fluid" src="../../../assets/home/Rectángulo 32.svg" alt="">  Planes integrales de igualdad de oportunidades y trato con perspectiva de género.
+      </li>
+      <li> <img class="img-fluid" src="../../../assets/home/Rectángulo 32.svg" alt="">  Capacitaciones y jornadas de formación para organizaciones.</li>
+      <li> <img class="img-fluid" src="../../../assets/home/Rectángulo 32.svg" alt="">  Talleres de sensibilización para grupos específicos.</li>
+    </ul>
+    <a class="boton-2" routerLink="/QueHacemos">Todos nuestros servicios  <img src="../../../assets/home/Path.svg" alt=""></a>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="row global-margin">
+    <div class="col-12 col-md-6 pb-mobile">
+      <img class="img-fluid" src="../../../assets/home/03.jpg" alt="Generactiva">
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card-body">
+            <p class="top-title">  <small>¿ QUIENES SOMOS ?</small></p>
+            <h3 class="card-title">Acompañamos a las organizaciones que quieren adoptar políticas de igualdad de trato y oportunidades desde una perspectiva de género. </h3>
+            <p class="card-text">Confluimos desde recorridos previos en investigación, docencia 
+              e implementación de políticas públicas. Nuestras experiencias profesionales están forjadas al calor del movimiento feminista que motiva el profundo compromiso con el que hacemos 
+              nuestro trabajo.               
+              </p>
+              <button class="btn btn-sm btn-violeta" type="button"> Quiero saber más </button>
+          </div>
+      </div>
+</div>
+</div>
+<div class="container">
+  <div class="row global-margin" id="contacto">
+    <div class="col-12 col-md-6 pb-mobile">
+      <div class="card-body">
+        <p class="top-title">  <small>CONTACTO</small></p>
+        <h3 class="card-title">Trabajemos en equipo. Dejanos tu mail y tu consulta. 
+          En breve nos pondremos en contacto con vos.
+          </h3>
+          <p class="contacto mt-5">Además, puedes escribirnos un email a la dirección <span>info@generactiva.com</span> </p>    
+        </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <form (ngSubmit)= 'enviar(formulario)' #formulario = "ngForm" action="https://www.google.com" target="_blank" method="POST">
+      <div class="form-group">
+        <label for="">Nombre y Apellido</label>
+        <input type="text" class="form-control" placeholder="Ingresá tu nombre" required minlength="5"
+        name="nombre" [ngModel]= "usuario.nombre" [class.is-invalid] = "nombre.invalid && nombre.touched"
+        #nombre="ngModel">
+        <small *ngIf="nombre.invalid && nombre.touched" class="form-text text-danger"> Por favor ingrese su nombre completo </small>
+      </div>
+
+      <div class="form-group">
+        <label for="">Email</label>
+        <input type="email" class="form-control" required placeholder="Ingresá tu email"
+        ngModel name="email"  [class.is-invalid] = "email.invalid && email.touched" 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email="ngModel" >
+        <small *ngIf="email.invalid && email.touched" class="form-text text-danger"> Por favor ingresar el mail correctamente </small>
+
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1"> Mensaje <span>(opcional)</span></label>
+        <textarea class="form-control" rows="4" placeholder="Por ejemplo: ¡Hola! Quiero una asesoría para mi organización."></textarea>
+      </div>
+      <button class="btn btn-block btn-violeta mt-4" type="submit"> Enviar consulta </button>
+    </form>
+  </div>
+</div>
+</div>

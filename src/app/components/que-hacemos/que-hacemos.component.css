@@ -1,0 +1,20 @@
+.px-lg-5{
+    padding-left: 10rem !important;
+    padding-right: 10rem !important;
+}
+
+.quehacemos-title{
+ font-size: 24px;
+ color: #3E0C8E;
+ font-family: 'raleway';
+ font-weight: 700;
+}
+
+.contact-text{
+    font-size: 18px;
+}
+
+.card-title{
+    font-size: 30px;
+}
+
