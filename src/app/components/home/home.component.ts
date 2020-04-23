@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { MessageService } from '../../services/message.service';
 
 @Component({
   selector: 'app-home',
@@ -8,24 +9,10 @@ import { NgForm } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
 
-  usuario = {
-    nombre: '',
-    email: ''
-  }
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-  enviar(formulario:NgForm){
-    if (formulario.invalid){
-      Object.values(formulario.controls).forEach( control => {
-      control.markAsTouched();
-    })
-      return;
-    } 
-  }
 
-  
 }

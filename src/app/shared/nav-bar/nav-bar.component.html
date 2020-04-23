@@ -1,8 +1,12 @@
 <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-white">
     <a class="navbar-brand" href="#">
         <img  src="../../../assets/iso.svg" width="120" height="50" class="d-inline-block align-top logo" alt="generactiva">
-        <img src="../../../assets/logo.svg" width="160" height="50" class="d-inline-block align-top pl-3"
-            alt="generactiva">
+        <div class="d-inline-block align-top">
+            <div class="col pl-5 pt-2">
+                <img class="row" src="../../../assets/logo.svg"  alt="generactiva"> 
+                <img class="row pt-2 logo2" src="../../../assets/sublogo.svg" width="165" height="auto"  alt="generactiva">
+            </div>
+        </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,14 +14,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav align-right">
-            <li class="nav-item active">
-                <a class="nav-link"  routerLink="/QueHacemos">Que hacemos? <span class="sr-only">(current)</span></a>
+            <li class="nav-item mt-1 mr-3">
+                <a class="nav-link "  routerLink="/QueHacemos" routerLinkActive="active-link">¿Qué hacemos? <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/ComoTrabajamos">Como trabajamos?</a>
+            <li class="nav-item mt-1 mr-3">
+                <a class="nav-link" routerLink="/ComoTrabajamos" routerLinkActive="active-link">¿Cómo trabajamos?</a>
             </li>
             <form class="form-inline nav-link">
-                <button class="btn btn-sm  btn-violeta" type="button" routerLink="#contacto">Hablemos!</button>
+                <button class="btn btn-sm  btn-violeta" type="button"  routerLink="/Inicio/formulario"> Hablemos!</button>
             </form>
         </ul>
     </div>

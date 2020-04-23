@@ -27,11 +27,20 @@
     .bg-azul{
         text-align: center;
     }
-    }
-    
 
-.navbar{
-    padding: .5rem 2rem !important;
+    .btn-block{
+        margin-top: 1rem;
+        width: 100% !important;
+        display: block;
+    }
+
+    .navbar{
+        padding: 1rem 1rem;
+    }
+    }
+
+.btn-block{
+    width: auto;
 }
 
 body{
@@ -48,6 +57,10 @@ body{
     padding-top:  170px ;
 }
 
+.pt-lg-7{
+ padding-top: 5rem;
+}
+
 .py-7{
     padding: 87px 0px;
 }
@@ -59,6 +72,7 @@ body{
     background-color: #FCF9FE;
 
 }
+
 .bg-rosaOscuro{
     background-color: #DED7EB;}
 
@@ -67,12 +81,13 @@ body{
     font-family: 'Raleway';
     font-weight: 700;
     color: #3E0C8E;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .card-text{
     font-weight: 400;
     margin-top: 30px;
+    margin-bottom: 30px;
     
 }
 
@@ -80,14 +95,16 @@ body{
     background-color: #3E0C8E;
     color: #fff;
     border-radius: 3em;
-    padding: 5px 30px;
+    padding: 3px 20px;
     font-family: 'Raleway';
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
 .btn-violeta:hover{
     background-color: #A88BD8;
+    color: #fff;
+
 }
 
 .top-title{
@@ -102,6 +119,7 @@ body{
     padding: 5px 30px;
     color: #fff;
 }
+
 
 .lista{
     margin-left: 0;

@@ -6,39 +6,6 @@
 .bg-rosaOscuro{
     background-color: #DED7EB;}
 
-.card-title{
-    font-family: 'Raleway';
-    font-weight: 700;
-    color: #3E0C8E;
-    font-size: 30px;
-}
-
-.card-text{
-    font-weight: 400;
-    margin-top: 20px;
-    
-}
-
-.btn-violeta{
-    margin-top: 20px;
-    background-color: #3E0C8E;
-    color: #fff;
-    border-radius: 3em;
-    padding: 5px 30px;
-    font-family: 'Raleway';
-    font-size: 16px;
-}
-
-
-.btn-violeta:hover{
-    background-color: #A88BD8;
-}
-
-.top-title{
-    font-family: 'Raleway';
-    font-size: 16px;
-    color: #3E0C8E;
-}
 
 .btn-violeta2{
     border-radius: 2em;
@@ -46,7 +13,6 @@
     padding: 5px 30px;
     color: #fff;
 }
-
 
 .boton-2{
     color: #3E0C8E;
@@ -59,27 +25,3 @@
    border: none;
 }
 
-.contacto span{
-    color: #3E0C8E;
-    font-weight: 700;
-}
-
-.form-group label{
-    color: #3E0C8E;
-    font-family: 'raleway';
-    font-weight: 700;
-}
-
-
-.form-group ::placeholder{
-    font-size: 14px;
-    color: #B7B5BA;
-}
-
-.form-group .form-control{
-    background-color: #F4F2F6;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid ;
-}

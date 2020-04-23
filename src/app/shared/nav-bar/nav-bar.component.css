@@ -8,6 +8,10 @@
     color: #A88BD8!important;
 }
 
+.active-link{
+    color:#A88BD8!important;
+}
+
 .btn-violeta{
     background-color: #3E0C8E;
     color: #fff;
@@ -19,9 +23,16 @@
     background-color: #A88BD8;
 }
 
+.btn-violeta:active{
+    background-color: #A88BD8;
+}
+
 @media (max-width: 575.98px){
 
 .logo{
+    display: none !important;
+}
+.logo2{
     display: none !important;
 }
 }
@@ -37,10 +48,7 @@
             padding-right:  2rem !important;
             padding-left: 2rem !important;
         }
-
-        .logo{
-            display: inline;
-        }
+        
 }
 
 

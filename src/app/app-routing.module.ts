@@ -3,9 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import {ComoTrabajamosComponent} from './components/como-trabajamos/como-trabajamos.component';
 import {QueHacemosComponent} from './components/que-hacemos/que-hacemos.component'
 import {HomeComponent} from './components/home/home.component'
+import { FormularioComponent } from './shared/formulario/formulario.component';
 
 const routes: Routes = [
   {path: 'Inicio', component: HomeComponent},
+  {path:'Inicio/formulario',component: FormularioComponent},
   {path: 'QueHacemos', component: QueHacemosComponent},
   {path: 'ComoTrabajamos', component: ComoTrabajamosComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'Inicio'}

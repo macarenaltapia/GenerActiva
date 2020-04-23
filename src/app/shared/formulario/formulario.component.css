@@ -1,0 +1,27 @@
+.altura-formulario{
+    padding-top: 0.7rem;
+}
+.contacto span{
+    color: #3E0C8E;
+    font-weight: 700;
+}
+
+.form-group label{
+    color: #3E0C8E;
+    font-family: 'raleway';
+    font-weight: 700;
+}
+
+
+.form-group ::placeholder{
+    font-size: 14px;
+    color: #B7B5BA;
+}
+
+.form-group .form-control{
+    background-color: #F4F2F6;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid ;
+}

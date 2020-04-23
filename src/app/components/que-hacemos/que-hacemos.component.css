@@ -18,3 +18,10 @@
     font-size: 30px;
 }
 
+.img-fluid{
+    max-width: 112% !important;
+}
+
+.margin-porquelohacemos{
+    padding-top: 100px;
+}

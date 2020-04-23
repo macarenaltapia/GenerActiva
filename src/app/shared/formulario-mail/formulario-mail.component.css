@@ -1,0 +1,44 @@
+.input-email{
+    background-color: #CFC2E8;
+    border-color: #CFC2E8;
+    color: #A88BD8;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+
+input .input-email ::placeholder{
+    font-size: 14px;
+    color: #A88BD8;
+    background-color: #CFC2E8;
+}
+
+
+.btn-violeta2{
+    border-radius: 2em;
+    background-color: #3E0C8E;
+    padding: 5px 30px;
+    color: #fff;
+}
+
+.btn-violeta2:hover{
+    background-color: #A88BD8;
+    color: #fff;
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;}
+
+
+@media (max-width: 575.98px){
+.form-inline .form-control {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+}
+
+

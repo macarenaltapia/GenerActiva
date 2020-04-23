@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,10 @@ import { ComoTrabajamosComponent } from './components/como-trabajamos/como-traba
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/home/home.component';
+import { FormularioComponent } from './shared/formulario/formulario.component';
 
+import { MessageService } from './services/message.service';
+import { FormularioMailComponent } from './shared/formulario-mail/formulario-mail.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +26,18 @@ import { HomeComponent } from './components/home/home.component';
     ComoTrabajamosComponent,
     EquipoComponent,
     HomeComponent,
+    FormularioComponent,
+    FormularioMailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
