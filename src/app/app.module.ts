@@ -16,6 +16,9 @@ import { FormularioComponent } from './shared/formulario/formulario.component';
 
 import { MessageService } from './services/message.service';
 import { FormularioMailComponent } from './shared/formulario-mail/formulario-mail.component';
+import { FooterBComponent } from './shared/footer-b/footer-b.component';
+import { RouterModule } from '@angular/router';
+import { FormularioPhpComponent } from './shared/formulario-php/formulario-php.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { FormularioMailComponent } from './shared/formulario-mail/formulario-mai
     EquipoComponent,
     HomeComponent,
     FormularioComponent,
-    FormularioMailComponent
+    FormularioMailComponent,
+    FooterBComponent,
+    FormularioPhpComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +40,12 @@ import { FormularioMailComponent } from './shared/formulario-mail/formulario-mai
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

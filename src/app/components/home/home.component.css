@@ -25,3 +25,14 @@
    border: none;
 }
 
+.servicios-body{
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0rem 1.25rem;
+}
+
+.servicios-text{
+    margin-top: 0 !important;
+}
+

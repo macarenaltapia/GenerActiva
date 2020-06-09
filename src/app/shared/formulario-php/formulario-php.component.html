@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row global-margin global-margin-top" id="contacto">
+      <div class="col-12 col-md-6">
+        <div class="card-body">
+          <p class="top-title">  <small>CONTACTO</small></p>
+          <h3 class="card-title">Trabajemos en equipo. Dejanos tu mail y tu consulta. 
+            En breve nos pondremos en contacto con vos.
+            </h3>
+            <p class="contacto mt-5">Además, podés escribirnos un email a la dirección <span>contacto@generactivaconsultorias.com</span> </p>    
+          </div>
+    </div>
+    <div class="col-12 col-md-6  altura-formulario">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" autocomplete="off">
+            <div class='form-group'>
+                <label>Nombre y Apellido *</label>
+                <input  placeholder="Ingresá tu nombre" class="form-control" #nombre="ngModel" maxlength="20" [(ngModel)]="ContactModel.nombre" name="nombre" required [class.is-invalid] ="nombre.touched && nombre.invalid" >
+                <small *ngIf="nombre.touched &&  nombre.invalid" class="form-text text-danger"> Este campo es obligatorio </small>    
+            </div>
+            <div class='form-group'>
+                <label>Organización</label>
+                <input  placeholder="Ingresá tu organización" class="form-control" #organizacion maxlength="60" [(ngModel)]="ContactModel.organizacion" name="organizacion"> 
+            </div>
+            <div class='form-group'>
+                <label>Email *</label>
+                <input placeholder="Ingresá tu Email" #email="ngModel" type="email" class="form-control" [(ngModel)]="ContactModel.email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required [class.is-invalid] ="email.touched && email.invalid" >
+                <small *ngIf="email.touched && email.invalid" class="form-text text-danger"> Este campo es obligatorio </small>    
+
+            </div>
+            <div class="form-group">
+                <label>Mensaje</label>
+                <textarea  placeholder="Por ejemplo: ¡Hola! Quiero una asesoría para mi organización" class="form-control" #mensaje maxlength="300" [(ngModel)]="ContactModel.mensaje" name="mensaje" cols="30"></textarea>
+            </div>
+            <button class="btn btn-block btn-violeta mt-4" [disabled]="!contactForm.form.valid">Enviar</button>
+          </form>
+</div>
+</div>
+</div>

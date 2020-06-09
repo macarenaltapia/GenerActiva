@@ -1,15 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { ContactModelB } from '../models/contactFormB';
+import { ContactModel } from '../models/contactForm';
 
 
 @Injectable()
 export class MessageService {
 constructor(private _http: HttpClient) { }
-sendMessage(body) {
- return this._http.post('http://localhost:3000/formulario', body);
- }
+
+ sendMail(_body: ContactModelB): Observable<any> {
+   return this._http.post('/sendMail.php',_body);
+
+ };
+
+ getResponseEmail(_body: ContactModel): Observable<any>{
+    return this._http.post('/send.php',_body);
+   }
  
- sendMail(body) {
-    return this._http.post('http://localhost:3000/mail', body);
  }
-}

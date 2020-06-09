@@ -28,10 +28,10 @@ export class FormularioComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  contactForm(f) {
+  /* contactForm(f) {
     this._MessageService.sendMessage(f).subscribe(() => {
     swal.fire('Formulario de contacto', 'Mensaje enviado correctamente', 'success');
     });
     this.f.reset()
-    }
+    } */
 }

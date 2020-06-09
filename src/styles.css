@@ -7,13 +7,19 @@
 
   @media (max-width: 575.98px){
 
+
+    br{
+        display: none;
+    }
+    
     .global-margin{
-        padding-bottom: 80px !important;
+        padding-bottom: 60px !important;
         text-align: center;
     }
     
     .global-margin-top{
-        padding-top:  80px !important;
+        padding-top:  60px !important;
+        text-align: center;
     }
 
     .pb-mobile{
@@ -43,6 +49,10 @@
     width: auto;
 }
 
+.navbar{
+padding: 1rem 1rem !important;
+}
+
 body{
     font-family: 'Open Sans' ;
     font-weight: 18px;
@@ -50,11 +60,11 @@ body{
 }
 
 .global-margin{
-    padding-bottom: 170px;
+    padding-bottom: 120px;
 }
 
 .global-margin-top{
-    padding-top:  170px ;
+    padding-top:  100px ;
 }
 
 .pt-lg-7{
@@ -98,6 +108,7 @@ body{
     padding: 3px 20px;
     font-family: 'Raleway';
     font-size: 15px;
+    margin-bottom: 2rem;
 }
 
 

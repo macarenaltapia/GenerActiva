@@ -1,24 +1,32 @@
-<div class="container global-margin-top">
+<!-- <div class="container global-margin-top">
     <div class="row global-margin" id="contacto">
-      <div class="col-12 col-md-6 pb-mobile">
+      <div class="col-12 col-md-6">
         <div class="card-body">
           <p class="top-title">  <small>CONTACTO</small></p>
           <h3 class="card-title">Trabajemos en equipo. Dejanos tu mail y tu consulta. 
-            En breve nos pondremos en contacto con vos.
+            En breve nos pondremos en contacto con vos
             </h3>
-            <p class="contacto mt-5">Además, puedes escribirnos un email a la dirección <span>info@generactiva.com</span> </p>    
+            <p class="contacto mt-5">Además, podés escribirnos un email a la dirección <span>info@generactiva.com</span> </p>    
           </div>
     </div>
-    <div class="col-12 col-md-6 mt-5 altura-formulario">
+    <div class="col-12 col-md-6  altura-formulario">
 <form  (ngSubmit)='contactForm(f.value)' autocomplete="off" [formGroup]="f"  autocomplete="off">
     <div class='form-group'>
     <label>Nombre y Apellido</label>
     <input id="nombre" type="text" class="form-control" formControlName="nombre"  placeholder="Ingresá tu nombre"  >
     <div  *ngIf="f.controls.nombre.errors && f.controls.nombre.touched" class="form-text text-danger"> 
       <small *ngIf="f.controls.nombre.errors.required"> Este campo es obligatorio</small>
-      <small *ngIf="f.controls.nombre.errors.minlength">cantidad minima de caracteres 3</small>
+      <small *ngIf="f.controls.nombre.errors.minlength">cantidad mínima de caracteres 3</small>
     </div>
     </div>
+    <div class='form-group'>
+      <label>Organización</label>
+      <input id="organizacion" type="text" class="form-control" formControlName="organizacion" placeholder="Ingresá tu organización" >
+      <div *ngIf="f.controls.organizacion.errors && f.controls.organizacion.touched">
+        <small *ngIf="f.controls.organizacion.errors.required" class="form-text text-danger"> Este campo es obligatorio</small>
+      </div>
+  
+      </div>
     <div class='form-group'>
     <label>Email</label>
     <input id="mail" type="email" class="form-control" formControlName="mail" placeholder="Ingresá tu email" >
@@ -32,9 +40,10 @@
     <label>Mensaje</label>
     <textarea class="form-control" id="mensaje" formControlName="mensaje" cols="30" placeholder="Por ejemplo: ¡Hola! Quiero una asesoría para mi organización."></textarea>
     </div>
-    <button type="submit"  class="btn btn-block btn-violeta mt-4" disabled >Enviar</button>
+    <button type="submit"  class="btn btn-block btn-violeta mt-4"  [disabled]="!f.valid" >Enviar</button>
     
     </form>
 </div>
 </div>
 </div>
+ -->
