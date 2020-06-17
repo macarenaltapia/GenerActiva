@@ -13,8 +13,6 @@ export class FormularioMailComponent implements OnInit {
 
   //creacion de variable contact
   ContactModelb = new ContactModelB();
-  private emailResponse;
-  private truefalse:boolean = false;
   
   constructor(public _MessageService: MessageService) { }
 
@@ -25,10 +23,14 @@ export class FormularioMailComponent implements OnInit {
     this.getSentServices(this.ContactModelb, f);
 }
 //metodo de services
-getSentServices(email:ContactModelB, f: NgForm){
-    this._MessageService.sendMail(email).subscribe(() => {
-      swal.fire('Formulario de contacto', 'Mensaje enviado correctamente', 'success');
-      f.reset()
-      });
+getSentServices(body:ContactModelB, f: NgForm){
+    this._MessageService.sendMail(body).subscribe(
+      data => {
+          if(data){
+                f.reset();
+          }
+          swal.fire('Tu email ha sido enviado correctamente', '' ,'success');
+        },
+    );
 }
 }

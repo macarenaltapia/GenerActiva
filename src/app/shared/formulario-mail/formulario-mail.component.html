@@ -2,13 +2,13 @@
     <div class="card-body text-center">
       <h3 class="card-title">¡Trabajemos en equipo!</h3>
       <p>Dejanos tu mail y en breve nos pondremos en contacto con vos.</p>
-        <form class="form-inline justify-content-center" autocomplete="off" (ngSubmit)="onSubmit(contactFormB)" #contactFormB="ngForm"  method="POST" >
-              <input type="email"  class="form-control  input-email" required placeholder="Ingresá tu email"  name="email" [class.is-invalid] = "email.invalid && email.touched" 
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email="ngModel" [(ngModel)]="ContactModelb.email"> 
+        <form class="form-inline justify-content-center" autocomplete="off" (ngSubmit)="onSubmit(contactFormB)" #contactFormB="ngForm">
+            <input type="email"  class="form-control  input-email" #mail="ngModel" [(ngModel)]="ContactModelb.mail" required placeholder="Ingresá tu email"  name="mail" [class.is-invalid] = "mail.invalid && mail.touched" 
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" > 
               <button type="submit" class="btn btn-violeta2 btn-block mx-2" [disabled]="!contactFormB.form.valid" >Enviar</button>
         </form>
-        <small *ngIf="email.invalid && email.touched" class="form-text text-danger"> Por favor ingresar el mail correctamente </small>
+        <small *ngIf="mail.invalid && mail.touched" class="form-text text-danger"> Por favor ingresar el mail correctamente </small>
     </div>
   </div>
 
-  
+ 

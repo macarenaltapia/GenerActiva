@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { APP_BASE_HREF } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
@@ -41,9 +41,10 @@ import { FormularioPhpComponent } from './shared/formulario-php/formulario-php.c
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    RouterModule
 
   ],
-  providers: [MessageService],
+  providers: [MessageService, { provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

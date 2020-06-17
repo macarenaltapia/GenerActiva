@@ -25,3 +25,11 @@
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid ;
 }
+
+
+@media (max-width: 575.98px){
+    .contacto span{
+        color: #3E0C8E;
+        font-weight: 500;
+}
+}

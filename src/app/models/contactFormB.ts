@@ -1,3 +1,3 @@
 export class ContactModelB {
-    public email: string;
+    public mail: string;
 }

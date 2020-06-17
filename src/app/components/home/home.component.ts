@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { MessageService } from '../../services/message.service';
 
@@ -8,8 +8,9 @@ import { MessageService } from '../../services/message.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-
+  @Input()
+  titulo: string;
+  
   constructor() { }
 
   ngOnInit(): void {
